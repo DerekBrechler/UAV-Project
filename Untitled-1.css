@@ -1,0 +1,80 @@
+/* Define the deep charcoal background for a sleek, high-tech look */
+body {
+    background-color: #2C3E50; /* Deep Charcoal for a modern, futuristic base */
+    background-image: url("pexels-guiirossi-1686869.jpg"); /* Trying to get this image to work */
+    background-size: auto;
+    margin: 0; /* Remove default margins */
+    height: 100vh; /* Full viewport height */
+    font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif; /* From your request */
+    font-weight: 300; /* Ensures light weight */
+    display: flex; /* Use flexbox for overall layout */
+    flex-direction: column; /* Stack tabs and content vertically */
+    justify-content: flex-start; /* Start content at the top, but we’ll handle centering below */
+    align-items: center; /* Center content horizontally on the screen */
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+/* Navigation bar styling (unchanged, stays at the top) */
+.tabs {
+    display: flex; /* Use flexbox for evenly spacing tabs */
+    justify-content: space-evenly; /* Evenly space tabs horizontally */
+    background-color: #B0B7BC; /* Metallic Silver for a futuristic, neutral look */
+    padding: 15px 0; /* Vertical padding for tabs */
+    border-bottom: 2px solid #1A1A1A; /* Soft Black for a sharp, clean border */
+    width: 100%; /* Full width */
+    position: fixed; /* Keep tabs at the top of the viewport */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure tabs stay above other content */
+}
+
+/* Update the text container to center its contents vertically and horizontally */
+.text-container {
+    text-align: center; /* Center text horizontally within the container */
+    color: #FFFFFF; /* Pure White for text, readable against dark backgrounds */
+    padding: 20px; /* Add some padding for readability */
+    background-color: #B0B7BC; /* Metallic Silver for a futuristic, neutral box */
+    border-radius: 8px; /* Rounded corners for a cleaner look */
+    box-shadow: 0 2px 4px rgba(44, 62, 80, 0.3); /* Deep Charcoal shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for the grow effect */
+    margin-top: 80px; /* Add space below the fixed tabs to account for their height */
+    width: 80%; /* Limit width for readability; adjust as needed */
+    max-width: 600px; /* Maximum width for larger screens */
+    display: flex; /* Use flexbox to center content vertically if needed */
+    flex-direction: column; /* Stack h1 and p vertically */
+    align-items: center; /* Center items horizontally within the container */
+    position: absolute; /* Position absolutely to center vertically */
+    top: 50%; /* Center vertically by moving down 50% of the viewport */
+    transform: translateY(-50%); /* Shift up by half its height to center perfectly */
+    opacity: 0.75;
+}
+
+/* Grow effect on hover for the text container (unchanged) */
+.text-container:hover {
+    transform: scale(1.1) translateY(-50%); /* Scale up by 10% on hover, maintaining vertical centering */
+}
+
+/* Ensure h1 and p inherit the font and remove default margins (unchanged) */
+h1, p {
+    margin: 0; /* Remove default margins for perfect centering */
+}
+
+/* Other tab styles remain unchanged for brevity, but you can keep them as is */
+.tab {
+    text-decoration: none; /* Remove default underline */
+    color: #1A1A1A; /* Soft Black for text, readable against silver */
+    font-size: 18px; /* Larger text for visibility; adjust as needed */
+    padding: 10px 20px; /* Padding for clickable area */
+    border-radius: 5px 5px 0 0; /* Rounded top corners for tabs */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.tab:hover {
+    background-color: #ECF0F1; /* Light Gray for a subtle, neutral highlight */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+.tab:active {
+    background-color: #1A1A1A; /* Soft Black for a pressed, elegant effect */
+    color: #FFFFFF; /* Pure White text for contrast on active state */
+}
+
